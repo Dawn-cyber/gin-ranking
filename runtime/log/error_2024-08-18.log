@@ -1,0 +1,39 @@
+panic error time:2024-08-18 01:12:29
+runtime error: integer divide by zeroStacktrce from panic:goroutine 19 [running]:
+runtime/debug.Stack()
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/runtime/debug/stack.go:24 +0x64
+gin-ranking/pkg/logger.Recover.func1()
+	/Users/qian/gin-ranking/pkg/logger/logger.go:141 +0x1e8
+panic({0x10298efa0?, 0x102c79320?})
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/runtime/panic.go:914 +0x218
+gin-ranking/controllers.UserController.GetList({}, 0x1da29a54c33?)
+	/Users/qian/gin-ranking/controllers/user.go:26 +0x1c
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+gin-ranking/pkg/logger.Recover(0x14000268200)
+	/Users/qian/gin-ranking/pkg/logger/logger.go:151 +0x6c
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x14000268200)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xb4
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0x14000268200)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0x80
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x14000268200)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xb4
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x14000103860, 0x14000268200)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x6c8
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x14000103860, {0x102a029e8?, 0x1400016a460}, 0x14000268100)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x1a0
+net/http.serverHandler.ServeHTTP({0x102a01670?}, {0x102a029e8?, 0x1400016a460?}, 0x6?)
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/net/http/server.go:2943 +0xbc
+net/http.(*conn).serve(0x1400017e240, {0x102a032e8, 0x14000265f80})
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/net/http/server.go:2014 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/net/http/server.go:3091 +0x4cc
+

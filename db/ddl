@@ -1,0 +1,22 @@
+CREATE TABLE `play` (
+  `id` int(11) NOT NULL,
+  `aid` int(11),
+  `ref` varchar(50),
+  `nickname` varchar(25),
+  `declaration` varchar(255),
+  `avatar` varchar(255),
+  `score` int(11),
+  `create_time` int(11),
+  `update_time` int(11),
+  PRIMARY KEY (`id`)
+)
+
+CREATE TABLE `vote` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11),
+  `create_time` int(11),
+  `update_time` int(11),
+  PRIMARY KEY (`id`)
+)
+
+insert into player value(1,'0003','下风了','很开心和大家见面','/images/11.png',0,unix_timestamp(NOW()),unix_timestamp(NOW()));

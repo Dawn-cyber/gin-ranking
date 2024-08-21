@@ -1,0 +1,86 @@
+panic error time:2024-08-20 21:17:01
+runtime error: invalid memory address or nil pointer dereferenceStacktrce from panic:goroutine 6 [running]:
+runtime/debug.Stack()
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/runtime/debug/stack.go:24 +0x64
+gin-ranking/pkg/logger.Recover.func1()
+	/Users/qian/gin-ranking/pkg/logger/logger.go:141 +0x1e8
+panic({0x105183a80?, 0x1056344a0?})
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/runtime/panic.go:914 +0x218
+gin-ranking/controllers.PlayerController.GetRanking({}, 0x14000165458?)
+	/Users/qian/gin-ranking/controllers/player.go:27 +0x24
+github.com/gin-gonic/gin.(*Context).Next(0x140000b2100)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x3c
+gin-ranking/router.Router.Sessions.func1(0x140000b2100)
+	/Users/qian/go/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:54 +0x170
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+gin-ranking/pkg/logger.Recover(0x140000b2100)
+	/Users/qian/gin-ranking/pkg/logger/logger.go:151 +0x6c
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x140000b2100)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xb4
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0x140000b2100)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0x80
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x140000b2100)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xb4
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x14000003860, 0x140000b2100)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x6c8
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x14000003860, {0x105234ba8?, 0x1400009c0e0}, 0x140000b2000)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x1a0
+net/http.serverHandler.ServeHTTP({0x105233470?}, {0x105234ba8?, 0x1400009c0e0?}, 0x6?)
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/net/http/server.go:2943 +0xbc
+net/http.(*conn).serve(0x1400008e120, {0x105235b08, 0x14000090660})
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/net/http/server.go:2014 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/net/http/server.go:3091 +0x4cc
+
+panic error time:2024-08-20 21:18:44
+runtime error: invalid memory address or nil pointer dereferenceStacktrce from panic:goroutine 23 [running]:
+runtime/debug.Stack()
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/runtime/debug/stack.go:24 +0x64
+gin-ranking/pkg/logger.Recover.func1()
+	/Users/qian/gin-ranking/pkg/logger/logger.go:141 +0x1e8
+panic({0x1048afa80?, 0x104d604a0?})
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/runtime/panic.go:914 +0x218
+gin-ranking/controllers.PlayerController.GetRanking({}, 0x14000169458?)
+	/Users/qian/gin-ranking/controllers/player.go:27 +0x34
+github.com/gin-gonic/gin.(*Context).Next(0x14000268c00)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x3c
+gin-ranking/router.Router.Sessions.func1(0x14000268c00)
+	/Users/qian/go/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:54 +0x170
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+gin-ranking/pkg/logger.Recover(0x14000268c00)
+	/Users/qian/gin-ranking/pkg/logger/logger.go:151 +0x6c
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x14000268c00)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xb4
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0x14000268c00)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0x80
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0x14000268c00)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xb4
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0x140002b8000, 0x14000268c00)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x6c8
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0x140002b8000, {0x104960ba8?, 0x14000263260}, 0x14000268b00)
+	/Users/qian/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x1a0
+net/http.serverHandler.ServeHTTP({0x10495f470?}, {0x104960ba8?, 0x14000263260?}, 0x6?)
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/net/http/server.go:2943 +0xbc
+net/http.(*conn).serve(0x1400019c360, {0x104961b08, 0x140002c60f0})
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/net/http/server.go:2014 +0x518
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/homebrew/Cellar/go@1.21/1.21.13/libexec/src/net/http/server.go:3091 +0x4cc
+
